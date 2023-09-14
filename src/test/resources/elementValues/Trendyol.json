@@ -20,6 +20,76 @@
     "type": "id"
   },
   {
+    "key": "login email",
+    "value": "login-email",
+    "type": "id"
+  },
+  {
+    "key": "login password",
+    "value": "login-password-input",
+    "type": "id"
+  },
+  {
+    "key": "giriş yap button",
+    "value": ".q-primary.q-fluid.q-button-medium.q-button.submit",
+    "type": "css"
+  },
+  {
+    "key": "sign up button",
+    "value": "//*[@class='q-secondary q-button-medium q-button tab button right ']",
+    "type": "xpath"
+  },
+  {
+    "key": "register email",
+    "value": "register-email",
+    "type": "id"
+  },
+  {
+    "key": "register password",
+    "value": "register-password-input",
+    "type": "id"
+  },
+  {
+    "key": "personal checkbox",
+    "value": "//*[@class='personal-checkbox']/div/div/div/div",
+    "type": "xpath"
+  },
+  {
+    "key": "recaptcha checkbox",
+    "value": "//*[@class='recaptcha-checkbox-border']",
+    "type": "xpath"
+  },
+  {
+    "key": "submit button",
+    "value": "//*[@data-testid='submit-button']",
+    "type": "xpath"
+  },
+  {
+    "key": "code input",
+    "value": "//*[@class='ty-bg-beige ty-input ty-textbox ty-bordered ty-input-small']",
+    "type": "xpath"
+  },
+  {
+    "key": "code submit button",
+    "value": "//*[@class='ty-font-w-semi-bold ty-button ty-bordered ty-transition ty-input-small ty-primary']",
+    "type": "xpath"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
     "key": "",
     "value": "",
     "type": ""

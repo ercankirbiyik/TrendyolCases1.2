@@ -7,6 +7,7 @@ import org.example.model.ElementInfo;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.testng.Assert.assertFalse;
 
 public class UIBaseSteps extends UIBaseTest {
@@ -94,5 +95,25 @@ public class UIBaseSteps extends UIBaseTest {
         logger.info(alertText + " Popupı kabul edildi.");
     }
 
+    @Step({"<key> li elementi bul, temizle ve <text> değerini yaz",
+            "Find element by <key> clear and send keys <text>"})
+    public void sendKeysByKey(String key, String text) {
+        WebElement webElement = UIMethods.findElement(key);
+        webElement.clear();
+        webElement.sendKeys(text);
+        logger.info(key + " alanina " + text + " degeri yazildi. ");
+    }
+
+
+    @Step({"Check if element <key> contains text <expectedText>",
+            "<key> elementi <text> değerini içeriyor mu kontrol et"})
+    public void checkElementContainsText(String key, String expectedText) {
+        Boolean containsText = UIMethods.findElement(key).getText().contains(expectedText);
+        logger.info("Beklenen text: " + expectedText);
+        logger.info("Gerçek text: " + containsText);
+        assertTrue(containsText, "Expected text is not contained!!  " +
+                "  Beklenen text ile gerçek text aynı değil!!");
+        logger.info(key + " elementi " + "'"+ expectedText + "'" + " degerini iceriyor.");
+    }
 
 }

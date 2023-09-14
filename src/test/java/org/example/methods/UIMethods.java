@@ -76,6 +76,7 @@ public class UIMethods extends UIBaseTest {
         initMap(getFileList(currentWorkingDir + "/src/test/resources"));
         //initMap(getFileList());
     }
+
     public static void clickElement(WebElement element) {
         element.click();
     }
