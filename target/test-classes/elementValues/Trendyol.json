@@ -1,0 +1,27 @@
+[
+  {
+    "key": "link account-user",
+    "value": "//*[@class='link account-user']",
+    "type": "xpath"
+  },
+  {
+  "key": "login-button",
+  "value": "//*[@class='login-button']",
+  "type": "xpath"
+},
+  {
+    "key": "signup-button",
+    "value": "//*[@class='signup-button signup-button-container']",
+    "type": "xpath"
+  },
+  {
+    "key": "acceptCookies",
+    "value": "onetrust-accept-btn-handler",
+    "type": "id"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  }
+]

@@ -1,0 +1,73 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: A number (19) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 724milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 724"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 49656"}
+{"logLevel":"info","message":"Listening on port:49656"}
+2023-09-11 14:19:29 INFO  Reflections:219 scan - Reflections took 1992 ms to scan 209 urls, producing 7220 keys and 45740 values
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.waitByMilliSeconds' and 'org.example.steps.UIBaseSteps.waitByMilliSeconds'"}
+{"logLevel":"debug","message":"Found Wait {} milliseconds in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.waitByMilliSeconds' and 'org.example.steps.UIBaseSteps.waitByMilliSeconds'"}
+{"logLevel":"debug","message":"Found {} milisaniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.APIBaseSteps.testUserEndpoint' and 'org.example.steps.APIBaseSteps.testUserEndpoint'"}
+{"logLevel":"debug","message":"Found {} API'sine giriş yap ve başlığı kullanarak test et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.APIBaseSteps.testGETRequest' and 'org.example.steps.APIBaseSteps.testGETRequest'"}
+{"logLevel":"debug","message":"Found API {} için GET isteğini test et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.waitBySeconds' and 'org.example.steps.UIBaseSteps.waitBySeconds'"}
+{"logLevel":"debug","message":"Found Wait {} seconds in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.waitBySeconds' and 'org.example.steps.UIBaseSteps.waitBySeconds'"}
+{"logLevel":"debug","message":"Found {} saniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.APIBaseSteps.testApiRequest' and 'org.example.steps.APIBaseSteps.testApiRequest'"}
+{"logLevel":"debug","message":"Found API {} için {} isteğinin olmadığını test et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.APIBaseSteps.testPOSTRequest' and 'org.example.steps.APIBaseSteps.testPOSTRequest'"}
+{"logLevel":"debug","message":"Found API {} için POST isteğini test et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.clickElement' and 'org.example.steps.UIBaseSteps.clickElement'"}
+{"logLevel":"debug","message":"Found Click to element {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.clickElement' and 'org.example.steps.UIBaseSteps.clickElement'"}
+{"logLevel":"debug","message":"Found Elementine tıkla {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.getElementWithKeyIfExists' and 'org.example.steps.UIBaseSteps.getElementWithKeyIfExists'"}
+{"logLevel":"debug","message":"Found Check if element {} exists in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.getElementWithKeyIfExists' and 'org.example.steps.UIBaseSteps.getElementWithKeyIfExists'"}
+{"logLevel":"debug","message":"Found Element var mı kontrol et {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.acceptChromeAlertPopup' and 'org.example.steps.UIBaseSteps.acceptChromeAlertPopup'"}
+{"logLevel":"debug","message":"Found Accept Chrome alert popup in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.UIBaseSteps.acceptChromeAlertPopup' and 'org.example.steps.UIBaseSteps.acceptChromeAlertPopup'"}
+{"logLevel":"debug","message":"Found Chrome uyarı popup'ını kabul et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.APIBaseSteps.testMathOperationsEndpoint' and 'org.example.steps.APIBaseSteps.testMathOperationsEndpoint'"}
+{"logLevel":"debug","message":"Found API {} için {} matematik işlemini {} parametreleri ile test et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'org.example.steps.APIBaseSteps.testApiAuthentication' and 'org.example.steps.APIBaseSteps.testApiAuthentication'"}
+{"logLevel":"debug","message":"Found API {} için kullanıcı adı {} ve şifre {} ile kimlik doğrulama işlemini test et in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tWait {} milliseconds : public void waitByMilliSeconds(long milliseconds)"}
+{"logLevel":"debug","message":"\tClick to element {} : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} milisaniye bekle : public void waitByMilliSeconds(long milliseconds)"}
+{"logLevel":"debug","message":"\tAPI {} için kullanıcı adı {} ve şifre {} ile kimlik doğrulama işlemini test et : public void testApiAuthentication(String api, String username, String password)"}
+{"logLevel":"debug","message":"\tAPI {} için {} matematik işlemini {} parametreleri ile test et : public void testMathOperationsEndpoint(String api, String operation, Table paramTable)"}
+{"logLevel":"debug","message":"\tElement var mı kontrol et {} : public WebElement getElementWithKeyIfExists(String key)"}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitBySeconds(int seconds)"}
+{"logLevel":"debug","message":"\tAccept Chrome alert popup : public void acceptChromeAlertPopup()"}
+{"logLevel":"debug","message":"\tAPI {} için GET isteğini test et : public void testGETRequest(String api)"}
+{"logLevel":"debug","message":"\tAPI {} için {} isteğinin olmadığını test et : public static void testApiRequest(String api, String type)"}
+{"logLevel":"debug","message":"\t{} API'sine giriş yap ve başlığı kullanarak test et : public void testUserEndpoint(String BaseUrl)"}
+{"logLevel":"debug","message":"\tElementine tıkla {} : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\tAPI {} için POST isteğini test et : public void testPOSTRequest(String api)"}
+{"logLevel":"debug","message":"\tWait {} seconds : public void waitBySeconds(int seconds)"}
+{"logLevel":"debug","message":"\tCheck if element {} exists : public WebElement getElementWithKeyIfExists(String key)"}
+{"logLevel":"debug","message":"\tChrome uyarı popup'ını kabul et : public void acceptChromeAlertPopup()"}
+2023-09-11 14:19:30 INFO  Reflections:219 scan - Reflections took 774 ms to scan 209 urls, producing 7130 keys and 32854 values
+2023-09-11 14:19:30 INFO  UIBaseTest:55 setUp - ************************************  BeforeScenario  ************************************
+2023-09-11 14:19:30 INFO  UIBaseTest:58 setUp - Local cihazda mac ortaminda chrome browserinda test ayaga kalkacak
+Sep 11, 2023 2:19:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
+2023-09-11 14:19:34 INFO  UIBaseTest:64 setUp - https://www.trendyol.com/ adresi aciliyor!
+{"logLevel":"debug","message":"Executing 'Click to element {}' using 'class org.example.steps.UIBaseSteps.clickElement"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
