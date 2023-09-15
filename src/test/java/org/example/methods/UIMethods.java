@@ -11,11 +11,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 
 public class UIMethods extends UIBaseTest {
 
     public static By getElementInfoToBy(ElementInfo elementInfo) {
-        By by = null;
+        By by = null ;
         if (elementInfo.getType().equals("css")) {
             by = By.cssSelector(elementInfo.getValue());
         } else if (elementInfo.getType().equals(("name"))) {
@@ -83,6 +84,28 @@ public class UIMethods extends UIBaseTest {
 
     public static WebElement findElementWithKey(String key) {
         return findElement(key);
+    }
+
+    public static List<WebElement> findElements(String key) {
+        return driver.findElements(getElementInfoToBy(findElementInfoByKey(key)));
+    }
+
+
+
+    //Belirli bir locasyona sayfanın kaydırılması
+    public static void scrollTo(int x, int y) {
+        String script = String.format("window.scrollTo(%d, %d);", x, y);
+        executeJS(script, true);
+    }
+
+
+    //Javascript driverın başlatılması
+    private static JavascriptExecutor getJSExecutor() {
+        return (JavascriptExecutor) driver;
+    }
+    //Javascript scriptlerinin çalışması için gerekli fonksiyon
+    private static Object executeJS(String script, boolean wait) {
+        return wait ? getJSExecutor().executeScript(script, "") : getJSExecutor().executeAsyncScript(script, "");
     }
 
     public void saveValue(String key, String value) {

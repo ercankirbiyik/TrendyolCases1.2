@@ -20,6 +20,251 @@
     "type": "id"
   },
   {
+    "key": "login email",
+    "value": "login-email",
+    "type": "id"
+  },
+  {
+    "key": "login password",
+    "value": "login-password-input",
+    "type": "id"
+  },
+  {
+    "key": "giriş yap button",
+    "value": ".q-primary.q-fluid.q-button-medium.q-button.submit",
+    "type": "css"
+  },
+  {
+    "key": "sign up button",
+    "value": "//*[@class='q-secondary q-button-medium q-button tab button right ']",
+    "type": "xpath"
+  },
+  {
+    "key": "register email",
+    "value": "register-email",
+    "type": "id"
+  },
+  {
+    "key": "register password",
+    "value": "register-password-input",
+    "type": "id"
+  },
+  {
+    "key": "personal checkbox",
+    "value": "//*[@class='personal-checkbox']/div/div/div/div",
+    "type": "xpath"
+  },
+  {
+    "key": "recaptcha checkbox",
+    "value": "//*[@class='recaptcha-checkbox-border']",
+    "type": "xpath"
+  },
+  {
+    "key": "submit button",
+    "value": "//*[@data-testid='submit-button']",
+    "type": "xpath"
+  },
+  {
+    "key": "code input",
+    "value": "//*[@class='ty-bg-beige ty-input ty-textbox ty-bordered ty-input-small']",
+    "type": "xpath"
+  },
+  {
+    "key": "code submit button",
+    "value": "//*[@class='ty-font-w-semi-bold ty-button ty-bordered ty-transition ty-input-small ty-primary']",
+    "type": "xpath"
+  },
+  {
+    "key": "suggestion",
+    "value": "//*[@data-testid='suggestion']",
+    "type": "xpath"
+  },
+  {
+    "key": "monster filter checkbox",
+    "value": "//*[@class='fltr-item-wrppr']/div[text()='Monster']",
+    "type": "xpath"
+  },
+  {
+    "key": "price filter head",
+    "value": "//*[@class='fltr-cntnr-ttl-area']/div[text()='Fiyat']",
+    "type": "xpath"
+  },
+  {
+    "key": "price filter min input",
+    "value": ".fltr-srch-prc-rng-input.min",
+    "type": "css"
+  },
+  {
+    "key": "price filter max input",
+    "value": ".fltr-srch-prc-rng-input.max",
+    "type": "css"
+  },
+  {
+    "key": "price filter search button",
+    "value": ".fltr-srch-prc-rng-srch",
+    "type": "xpath"
+  },
+  {
+    "key": "products images container list",
+    "value": "//*[@class='image-container']",
+    "type": "xpath"
+  },
+  {
+    "key": "add to cart button",
+    "value": "//*[@component-id='1']",
+    "type": "xpath"
+  },
+  {
+    "key": "product preview status text",
+    "value": ".product-preview-status-text",
+    "type": "css"
+  },
+  {
+    "key": "add to favorite button list",
+    "value": "//*[@class='fvrt-btn-wrppr']/i",
+    "type": "xpath"
+  },
+  {
+    "key": "favorites container button",
+    "value": ".account-nav-item.account-favorites",
+    "type": "css"
+  },
+  {
+    "key": "favorites add to basket button",
+    "value": ".basket-button",
+    "type": "css"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
     "key": "",
     "value": "",
     "type": ""

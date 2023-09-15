@@ -1,0 +1,11 @@
+Created by ercan kirbiyik
+
+
+# Login with <username> and <password>
+* Click to element "link account-user"
+ Click to element "login-button"
+* Find element by "login email" clear and send keys <username>
+* Find element by "login password" clear and send keys <password>
+* Click to element "giriş yap button"
+
+

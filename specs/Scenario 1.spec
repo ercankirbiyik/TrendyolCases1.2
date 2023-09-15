@@ -1,15 +1,11 @@
-Getting Started with Gauge
-==========================
-
+Login And Sign Up Scenarios
+===========================
+Created by ercan kirbiyik
 
 
 Scenario 1.1 - Login:
 ---------------------
-* Click to element "link account-user"
- Click to element "login-button"
-* Find element by "login email" clear and send keys "rcnkirbiyik@gmail.com"
-* Find element by "login password" clear and send keys "Ercan30."
-* Click to element "giriş yap button"
+* Login with "rcnkirbiyik@gmail.com" and "Ercan30."
 * Check if element "link account-user" contains text "Hesabım"
 
 

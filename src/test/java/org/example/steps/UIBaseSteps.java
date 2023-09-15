@@ -4,8 +4,14 @@ import com.thoughtworks.gauge.Step;
 import org.example.base.UIBaseTest;
 import org.example.methods.UIMethods;
 import org.example.model.ElementInfo;
+import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.List;
+import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.testng.Assert.assertFalse;
@@ -115,5 +121,77 @@ public class UIBaseSteps extends UIBaseTest {
                 "  Beklenen text ile gerçek text aynı değil!!");
         logger.info(key + " elementi " + "'"+ expectedText + "'" + " degerini iceriyor.");
     }
+
+
+    @Step({"Send ENTER key to element <key>",
+            "Elemente ENTER keyi yolla <key>"})
+    public void sendKeyToElementENTER(String key) {
+        UIMethods.findElement(key).sendKeys(Keys.ENTER);
+        logger.info(key + " elementine ENTER keyi yollandı.");
+    }
+
+    @Step({"<key> Elementine kadar kaydır",
+            "Scroll to Element <key>"})
+    public WebElement scrollToElementToBeVisible(String key) {
+        ElementInfo elementInfo = findElementInfoByKey(key);
+        WebElement webElement = driver.findElement(UIMethods.getElementInfoToBy(elementInfo));
+        if (webElement != null) {
+            UIMethods.scrollTo(webElement.getLocation().getX(), webElement.getLocation().getY() - 100);
+        }
+        return webElement;
+    }
+
+
+    @Step({"<key> alanına kaydır"})
+    public void scrollToElement(String key) {
+        scrollToElementToBeVisible(key);
+        logger.info(key + " elementinin olduğu alana kaydırıldı");
+    }
+
+
+    @Step({"Random click in <key> list",
+            "<key> listesinden rastgele elemente tıkla"})
+    public void randomPick(String key) {
+        List<WebElement> elements = UIMethods.findElements(key);
+        Random random = new Random();
+        int index = random.nextInt(elements.size());
+        if (index == 0)
+            index += 1;
+        System.out.println("element count = " + elements.size());
+        System.out.println("çıktı = " + elements.get(index).getText());
+        scrollToElement(String.valueOf(elements.get(index)));
+        elements.get(index).click();
+        logger.info(elements + " listesinden " + key + " elementi secildi");
+    }
+
+    @Step({"Check if <key> element's attribute <attribute> contains the value <expectedValue>",
+            "<key> elementinin <attribute> niteliği <value> değerini içeriyor mu"})
+    public void checkElementAttributeContains(String key, String attribute, String expectedValue) {
+        WebElement element = UIMethods.findElement(key);
+
+        String actualValue;
+        int loopCount = 0;
+        while (loopCount < DEFAULT_MAX_ITERATION_COUNT) {
+            actualValue = element.getAttribute(attribute).trim();
+            if (actualValue.contains(expectedValue)) {
+                return;
+            }
+            loopCount++;
+            waitByMilliSeconds(DEFAULT_MILLISECOND_WAIT_AMOUNT);
+        }
+        Assertions.fail("Element's attribute value doesn't contain expected value");
+    }
+
+    @Step({"Check if element <key> not contains text <expectedText>",
+            "<key> elementi <text> değerini içermiyor mu kontrol et"})
+    public void checkElementNotContainsText(String key, String expectedText) {
+        Boolean containsText = UIMethods.findElement(key).getText().contains(expectedText);
+        logger.info("Beklenmeyen text: " + expectedText);
+        logger.info("Gerçek text: " + containsText);
+        Assertions.assertFalse(containsText, "Expected text is contained!!  " +
+                "  Beklenen text ile gerçek text aynı!!!");
+        logger.info(key + " elementi " + expectedText + " degerini icermiyor.");
+    }
+
 
 }

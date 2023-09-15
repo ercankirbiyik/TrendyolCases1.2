@@ -75,6 +75,226 @@
     "type": "xpath"
   },
   {
+    "key": "suggestion",
+    "value": "//*[@data-testid='suggestion']",
+    "type": "xpath"
+  },
+  {
+    "key": "monster filter checkbox",
+    "value": "//*[@class='fltr-item-wrppr']/div[text()='Monster']",
+    "type": "xpath"
+  },
+  {
+    "key": "price filter head",
+    "value": "//*[@class='fltr-cntnr-ttl-area']/div[text()='Fiyat']",
+    "type": "xpath"
+  },
+  {
+    "key": "price filter min input",
+    "value": ".fltr-srch-prc-rng-input.min",
+    "type": "css"
+  },
+  {
+    "key": "price filter max input",
+    "value": ".fltr-srch-prc-rng-input.max",
+    "type": "css"
+  },
+  {
+    "key": "price filter search button",
+    "value": ".fltr-srch-prc-rng-srch",
+    "type": "xpath"
+  },
+  {
+    "key": "products images container list",
+    "value": "//*[@class='image-container']",
+    "type": "xpath"
+  },
+  {
+    "key": "add to cart button",
+    "value": "//*[@component-id='1']",
+    "type": "xpath"
+  },
+  {
+    "key": "product preview status text",
+    "value": ".product-preview-status-text",
+    "type": "css"
+  },
+  {
+    "key": "add to favorite button list",
+    "value": "//*[@class='fvrt-btn-wrppr']/i",
+    "type": "xpath"
+  },
+  {
+    "key": "favorites container button",
+    "value": ".account-nav-item.account-favorites",
+    "type": "css"
+  },
+  {
+    "key": "favorites add to basket button",
+    "value": ".basket-button",
+    "type": "css"
+  },
+  {
+    "key": "women tab",
+    "value": "//*[@href='/butik/liste/1/kadin']",
+    "type": "xpath"
+  },
+  {
+    "key": "active tab",
+    "value": "//*[@class='tab-link active']",
+    "type": "xpath"
+  },
+  {
+    "key": "man tab",
+    "value": "//*[@href='/butik/liste/2/erkek']",
+    "type": "xpath"
+  },
+  {
+    "key": "mother child tab",
+    "value": "//*[@href='/butik/liste/3/anne--cocuk']",
+    "type": "xpath"
+  },
+  {
+    "key": "mother child tab",
+    "value": "//*[@href='/butik/liste/3/anne--cocuk']",
+    "type": "xpath"
+  },
+  {
+    "key": "home furniture tab",
+    "value": "//*[@href='/butik/liste/12/ev--mobilya']",
+    "type": "xpath"
+  },
+  {
+    "key": "supermarket tab",
+    "value": "//*[@href='/butik/liste/16/supermarket']",
+    "type": "xpath"
+  },
+  {
+    "key": "cosmetic tab",
+    "value": "//*[@href='/butik/liste/11/kozmetik']",
+    "type": "xpath"
+  },
+  {
+    "key": "electronic tab",
+    "value": "//*[@href='/butik/liste/5/elektronik']",
+    "type": "xpath"
+  },
+  {
+    "key": "sport outdoor tab",
+    "value": "//*[@href='/butik/liste/22/spor--outdoor']",
+    "type": "xpath"
+  },
+  {
+    "key": "bestseller tab",
+    "value": "//*[@href='/cok-satanlar?categoryId=56&type=bestSeller&webGenderId=1']",
+    "type": "xpath"
+  },
+  {
+    "key": "flash product tab",
+    "value": "//*[@href='/flas-indirimler']",
+    "type": "xpath"
+  },
+  {
+    "key": "new arrivals tab",
+    "value": "//*[@href='/yeni-gelenler']",
+    "type": "xpath"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
     "key": "",
     "value": "",
     "type": ""

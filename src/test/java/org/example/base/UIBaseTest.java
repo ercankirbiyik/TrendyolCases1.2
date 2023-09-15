@@ -104,7 +104,7 @@ public class UIBaseTest {
         Type elementType = new TypeToken<List<ElementInfo>>() {
         }.getType();
         Gson gson = new Gson();
-        List<ElementInfo> elementInfoList = null;
+        List<ElementInfo> elementInfoList;
         for (File file : fileList) {
             try {
                 FileReader filez = new FileReader(file);
