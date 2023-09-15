@@ -1,8 +1,8 @@
 [
-	"/usr/local/bin/gauge",
+	"gauge",
 	"run",
-	"--machine-readable",
 	"--hide-suggestion",
 	"--simple-console",
-	"/Users/testinium/IdeaProjects/TrendyolCases1.2/specs/example.spec:6"
+	"--dir=/Users/testinium/Documents/GitHub/ErcanKirbiyik/TrendyolCases1.2",
+	"/Users/testinium/Documents/GitHub/ErcanKirbiyik/TrendyolCases1.2/specs/example.spec:6"
 ]
